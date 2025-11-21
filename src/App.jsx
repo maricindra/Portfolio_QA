@@ -11,6 +11,7 @@ import Fotoperfil from "/public/foto-perfil.png"
 import Teste1 from "/public/teste1.jpg"
 import Teste2 from "/public/teste2.jpg"
 import Teste3 from "/public/teste3.jpg"
+import emil from "/public/emil.PNG"
 
 export default function Portfolio() {
   return (
@@ -87,25 +88,34 @@ export default function Portfolio() {
             "Testes de Regressão",
             "Testes de Integração",
             "K6 (Performance Testing)",
+            "Suporte a Sistemas",
             "Postman",
             "Cypress",
             "Selenium",
+            "Robot framework",
+            "Jenkins",
             "CI/CD",
+            "Docker", 
             "Python",
             "JavaScript",
             "C++",
-            "Docker",
-            "Node.js",
             "MongoDB",
             "SQL",
-            "Suporte a Sistemas",
+            "PostgreSQL",
             "Git/GitHub",
             "Jira & Trello",
-            "Notion",
+            "Git Actions",
             "Test Rail",
-            "Linux",
+            "Grafana",
+            "X-Ray",
             "Scrum & Kanban",
-            "Robot framework"
+            "Notion",
+            "Pytest",
+            "React",
+            "Angular",
+            "Express.js",
+            "Spring Boot ",
+            "Tailwind CSS",
           ].map((skill, idx) => (
             <Card key={idx} className="bg-gray-900 border border-gray-700">
               <CardContent className="p-4 text-center">{skill}</CardContent>
@@ -118,18 +128,46 @@ export default function Portfolio() {
       <section id="projetos" className="px-8 py-12 max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold mb-6 text-purple-400">Projetos</h2>
 
+        <Card className="bg-purple-900/40 border border-purple-700">
+          <CardContent className="p-6 space-y-4">
+            <h3 className="text-lg font-semibold">1. Landing Page Interativa 3D</h3>
+            <p className="text-gray-300">
+            O projeto desenvolvido utilizou uma stack tecnológica moderna, combinando React para a estruturação de componentes dinâmicos e o Tailwind CSS para garantir um desenvolvimento ágil e uma interface 100% responsiva em todos os breakpoints. O diferencial estratégico desta solução reside na integração de gráficos 3D interativos através da plataforma Spline, além disso, na movimentação foi usado o AOS. Essa integração demonstra a capacidade de trabalhar com ativos digitais complexos e de alto impacto visual, uma competência cada vez mais relevante e valorizada no cenário atual do desenvolvimento web.<br></br>
+        
+            <a href ="https://maricindra.github.io/Robot_Emil" ><strong>Clique para acessar o codigo </strong></a> <br /> 
+            </p>
+          <div className="flex flex-col justify-center  md:flex-row   gap-5" >
+            <motion.img
+            src={emil}
+            alt="Foto Perfil"
+            className=" w-40 h-40 rounded-full border-4 border-purple-500 shadow-lg"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.6 }} 
+          /></div>
+
+            <p className="text-sm text-purple-200"> 
+            <strong>Ferramentas:</strong> React, Vite, Tailwind, Spline, AOS <br />
+            <strong>Tipo:</strong>  Lading Page, Front-End
+            </p>
+            <p className="text-sm text-gray-400">
+              <strong>Objetivo:</strong> Garantir uma interface UX criando qualidade, funcionalidade responsuvas e dinâmicas com graficos 3D no front-END
+            </p>
+          </CardContent>
+        </Card><br></br><br></br>
+
         <div className="flex flex-col space-y-10">
         <Card className="bg-purple-900/40 border border-purple-700">
           <CardContent className="p-6 space-y-4">
-            <h3 className="text-lg font-semibold">1. Criação de API + Teste de API CRUD</h3>
+            <h3 className="text-lg font-semibold">2. Criação de API + Teste de API CRUD</h3>
             <p className="text-gray-300">
             Projeto demonstra a criação completa de uma API RESTful para um sistema de cadastro de livros. O desenvolvimento abrange o ciclo de vida completo dos dados (CRUD), além disso, inclui uma robusta validação de qualidade através de testes automatizados usando o Cypress.
             <br></br>
             <a href ="https://github.com/maricindra/Api-Restful-de-Livros-testes.git" ><strong>Clique para acessar o codigo </strong></a> <br />
-            
+
             </p>
             
-          <div className="flex flex-col   md:flex-row   gap-5" >
+          <div className="flex flex-col justify-center  md:flex-row   gap-5" >
           <motion.img
           src={Teste1}
           alt="Foto Perfil"
@@ -173,13 +211,12 @@ export default function Portfolio() {
 
         <Card className="bg-purple-900/40 border border-purple-700">
           <CardContent className="p-6 space-y-4">
-            <h3 className="text-lg font-semibold">2. Teste de interface Automatizada Robot Framework</h3>
+            <h3 className="text-lg font-semibold">3. Teste de interface Automatizada Robot Framework</h3>
             <p className="text-gray-300">
             Simular o comportamento de um usuário real no site da Americanas, validando funcionalidades essenciais como login e busca de produtos.<br></br>
         
             <a href ="https://github.com/maricindra/Robot-Framework.git" ><strong>Clique para acessar o codigo </strong></a> <br /> 
             </p>
-
 
             <div></div>
             <p className="text-sm text-purple-200"> 
